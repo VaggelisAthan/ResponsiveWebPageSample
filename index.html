@@ -1,0 +1,268 @@
+<html>
+
+<head>
+    <link href="app.css" rel="stylesheet" />
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="mySidenav" class="sidenav">
+                <div id="sidenav-top">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="./images/close.png"></a>
+                    <img src="./images/flag.png">
+                </div>
+                <div id="sidenav-login">
+                    <a href="#"><img src="./images/usersidenav.png" id="sidenav-user-icon"><h3 id="sidenav-login-text">Εγγραφή / Σύνδεση</h3></a>
+                    <hr id= "dividersubnav">
+                </div>
+                <div class="sidenav-menu1">
+                    <a href="javascript:void(0)" onclick="openNav2()"><span><p id="sidenav-leader">Η ΟΜΟΣΠΟΝΔΙΑ<img src="./sidenav-pointer.svg"></p></span></a>
+                    <a href="#"><span><p>ΑΡΚΑΔΩΝ ΕΡΓΑ<img src="./sidenav-pointer.svg"></p></span></a>
+                    <a href="#"><span><p>ΕΠΩΝΥΜΟΙ ΑΡΚΑΔΕΣ<img src="./sidenav-pointer.svg"></p></span></a>
+                    <a href="#"><span><p>ΝΕΑ - ΕΝΗΜΕΡΩΣΗ<img src="./sidenav-pointer.svg"></p></span></a>
+                    <a href="#"><span><p>ΕΠΙΣΚΕΨΗ ΣΤΗΝ ΑΡΚΑΔΙΑ<img src="./sidenav-pointer.svg"></p></span></a>
+                    <a href="#"><span><p>ΑΝΑΖΗΤΗΣΕΙΣ ΣΤΗΝ ΑΡΚΑΔΙΑ<img src="./sidenav-pointer.svg"></p></span></a>
+                    <a href="#"><span><p>ΕΠΙΚΟΙΝΩΝΙΑ<img src="./sidenav-pointer.svg"></p></span></a>
+                </div>
+                <div id="mySidenav2" class="sidenav2">
+                    <div id="return-sidenav">
+                        <a href="javascript:void(0)" class="closebtn2" onclick="closeNav2()"><img src="./images/sidenav-return.png"></a>
+                    </div>
+                    <div class="sidenav-menu2">
+                        <a href="#"><span><p id="sidenav2-leader">Ιστορία</p></span></a>
+                        <a href="#"><span><p>Διοικητικό Συμβούλιο</p></span></a>
+                        <a href="#"><span><p>Πρόεδρος - Βιογραφικό Σημείωμα</p></span></a>
+                        <a href="#"><span><p>Μήνυμα Προέδρου</p></span></a>
+                        <a href="#"><span><p>Districts</p></span></a>
+                        <a href="#"><span><p>Διατελέσαντες Προέδροι</p></span></a>
+                        <a href="#"><span><p>Αποστολή - Αξίες</p></span></a>
+                        <a href="#"><span><p>Πορεία - Εξέλιξη</p></span></a>
+                        <a href="#"><span><p>Ο Έλληνας πρέσβης στην Ουάσιγκτον</p></span></a>
+                        <a href="#"><span><p>Ο Πρέσβης ΗΠΑ στην Αθήνα</p></span></a>
+                        <a href="#"><span><p>Ο Οικουμενικός Πατριάρχης</p></span></a>
+                        <a href="#"><span><p>Ο Αρχιεπίσκοπος Αμερικής</p></span></a>
+                    </div>
+                </div>    
+            </div>           
+            <div id="topbar"> 
+                <div id="topbar_menu_left">
+                <span onclick="openNav()" id="menu-open"><img src="./images/burger.png"></span>
+                    <div id="topbar_time">
+                        <p>ΑΡΚΑΔΙΑ</p>
+                        <h2><img src="./images/clock.png" id="mobile-clock-fix">13:28</h2>
+                    </div>
+                    <div id="topbar_weather">
+                        <p>ΚΑΤΑΙΓΙΔΑ</p>
+                        <h2><svg  viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.8485 14.8939H16.0145C18.6702 14.308 20.413 11.6294 19.9151 9.03448C19.4171 6.6907 17.3423 5.01658 15.0186 5.01658H14.5206C13.2757 1.41721 9.3751 -0.759157 5.64046 0.245319C3.73165 0.747556 2.07181 1.91944 1.0759 3.67728C-0.00299146 5.3514 -0.251967 7.44406 0.245985 9.3693C0.826929 11.3783 2.07181 13.0524 3.89763 14.0569C4.31259 14.308 4.81054 14.1406 5.05952 13.722C5.3085 13.3035 5.14251 12.8013 4.72755 12.6338C3.31669 11.7968 2.32078 10.5412 1.90582 8.95077C1.49086 7.36035 1.73984 5.85364 2.56976 4.43063C3.31669 3.09133 4.56157 2.17056 6.05542 1.75203C9.12613 0.914969 12.2798 2.84021 13.1097 5.93735C13.1927 6.35588 13.5247 6.607 13.9397 6.607H15.0186C16.5954 6.607 17.9233 7.69518 18.2552 9.2856C18.6702 11.0434 17.5083 12.885 15.6825 13.2198C15.1845 13.3035 14.9356 13.8057 15.0186 14.2243C15.1016 14.6428 15.4335 14.8939 15.8485 14.8939ZM9.12613 13.3035H12.5288C12.8608 13.3035 13.0268 13.5546 13.1927 13.8057C13.3587 14.0569 13.3587 14.3917 13.1927 14.6428L9.87306 19.6652C9.70708 19.8326 9.4581 20 9.20912 20C9.04314 20 8.87715 19.9163 8.71117 19.8326C8.29621 19.5815 8.21322 19.0792 8.46219 18.6607L10.952 14.9776H7.54928C7.21731 14.9776 6.96834 14.8102 6.88535 14.5591C6.71936 14.308 6.71936 13.9731 6.88535 13.722L10.205 8.69965C10.454 8.28112 10.952 8.19741 11.3669 8.44853C11.7819 8.69965 11.8649 9.20189 11.6159 9.62042L9.12613 13.3035Z" fill="black"/>
+                            <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.8485 14.8939H16.0145C18.6702 14.308 20.413 11.6294 19.9151 9.03448C19.4171 6.6907 17.3423 5.01658 15.0186 5.01658H14.5206C13.2757 1.41721 9.3751 -0.759157 5.64046 0.245319C3.73165 0.747556 2.07181 1.91944 1.0759 3.67728C-0.00299146 5.3514 -0.251967 7.44406 0.245985 9.3693C0.826929 11.3783 2.07181 13.0524 3.89763 14.0569C4.31259 14.308 4.81054 14.1406 5.05952 13.722C5.3085 13.3035 5.14251 12.8013 4.72755 12.6338C3.31669 11.7968 2.32078 10.5412 1.90582 8.95077C1.49086 7.36035 1.73984 5.85364 2.56976 4.43063C3.31669 3.09133 4.56157 2.17056 6.05542 1.75203C9.12613 0.914969 12.2798 2.84021 13.1097 5.93735C13.1927 6.35588 13.5247 6.607 13.9397 6.607H15.0186C16.5954 6.607 17.9233 7.69518 18.2552 9.2856C18.6702 11.0434 17.5083 12.885 15.6825 13.2198C15.1845 13.3035 14.9356 13.8057 15.0186 14.2243C15.1016 14.6428 15.4335 14.8939 15.8485 14.8939ZM9.12613 13.3035H12.5288C12.8608 13.3035 13.0268 13.5546 13.1927 13.8057C13.3587 14.0569 13.3587 14.3917 13.1927 14.6428L9.87306 19.6652C9.70708 19.8326 9.4581 20 9.20912 20C9.04314 20 8.87715 19.9163 8.71117 19.8326C8.29621 19.5815 8.21322 19.0792 8.46219 18.6607L10.952 14.9776H7.54928C7.21731 14.9776 6.96834 14.8102 6.88535 14.5591C6.71936 14.308 6.71936 13.9731 6.88535 13.722L10.205 8.69965C10.454 8.28112 10.952 8.19741 11.3669 8.44853C11.7819 8.69965 11.8649 9.20189 11.6159 9.62042L9.12613 13.3035Z" fill="white"/>
+                            </mask>
+                            <g mask="url(#mask0)">
+                            <rect width="20" height="20" fill="white"/>
+                            </g>
+                            </svg> 12°C<span id="optacity_fix">°F</span></h2>
+                    </div>  
+                </div>
+                <div id="topbar_menu_right">
+                    <div id="topbar_language">
+                        <a href="#" id="flag"><img src="./images/gr_icon.png"></a><img src="./images/down_icon.png" id="down_icon">
+                    </div>
+                    <div id="sign_in">
+                        <a href="#"><img src="./images/user_icon.png" id="user_icon"><h3>Εγγραφή / Σύνδεση</h3></a>
+                    </div>
+                </div>
+            </div>
+            <nav id="main">
+                <a href="#" id="logo"><img src="logo.svg" alt="logo"></a>
+                <a href="#" id="logo-mobile"><img src="./images/Logo-mobile.png" alt="logo"></a>
+                <img src="PAFtext.svg" alt="PAF" id="header_PAF">
+                <ul id="main-menu">
+                    <li id="submenu"><a href="#">H ΟΜΟΣΠΟΝΔΙΑ</a>
+                        <div id="dropdown">
+                            <ul class="dropdown-content">
+                                <li><a href="#" id="leader">Ιστορία</a></li>
+                                <li><a href="#">Διοικητικό Συμβούλιο</a></li>
+                                <li><a href="#">Πρόεδρος - Βιογραφικό Σημείωμα</a></li>
+                                <li><a href="#">Μήνυμα Προέδρου</a></li>
+                                <li><a href="#">Districts</a></li>
+                                <li><a href="#">Διατελεσαντες Προέδροι</a></li>
+                                <li><a href="#">Αποστολή - Αξίες</a></li>
+                                <li><a href="#">Πορεία - Εξέλιξη</a></li>
+                                <li><a href="#">Ο Έλληνας πρέσβης στην Ουάσιγκτον</a></li>
+                                <li><a href="#">Ο Πρέσβης ΗΠΑ στην Αθήνα</a></li>
+                                <li><a href="#">Ο Οικουμενικός Πατριάρχης</a></li>
+                                <li><a href="#">Ο Αρχιεπίσκοπος Αμερικής</a></li>
+                            </ul>
+                        </div>
+                    </li>       
+                    <li><a href="#">ΑΡΚΑΔΩΝ ΕΡΓΑ</a></li>
+                    <li><a href="#">ΕΠΩΝΥΜΟΙ ΑΡΚΑΔΕΣ</a></li>
+                    <li><a href="#">ΝΕΑ - ΕΝΗΜΕΡΩΣΗ</a></li>
+                    <li><a href="#">ΕΠΙΣΚΕΨΗ ΣΤΗΝ ΑΡΚΑΔΙΑ</a></li>
+                    <li><a href="#">ΑΝΑΖΗΤΗΣΕΙΣ ΣΤΗΝ ΑΡΚΑΔΙΑ</a></li>
+                    <li><a href="#" ><img src="./images/mail.png" id="menu_mail_icon"></a></li>
+                </ul>
+            </nav>     
+            <div id="featured">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.2214 0.000107481V8.7293H19.5107V4.48616H17.4535V6.60773H15.2786V2.12168H21.9428V10.9392H2.05716V2.12168H8.7215V6.60773H6.54647V4.48616H4.4893V8.7293H10.7786V0.000107481H0V10.9392V13.0608V24H10.7786V15.2708H4.4893V19.5137H6.54647V17.3922H8.7215V21.8784H2.05716V13.0608H21.9428V21.8784H15.2786V17.3922H17.4535V19.5137H19.5107V15.2708H13.2214V24H24V0.000107481H13.2214Z" fill="white"/>
+                    <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.2214 0.000107481V8.7293H19.5107V4.48616H17.4535V6.60773H15.2786V2.12168H21.9428V10.9392H2.05716V2.12168H8.7215V6.60773H6.54647V4.48616H4.4893V8.7293H10.7786V0.000107481H0V10.9392V13.0608V24H10.7786V15.2708H4.4893V19.5137H6.54647V17.3922H8.7215V21.8784H2.05716V13.0608H21.9428V21.8784H15.2786V17.3922H17.4535V19.5137H19.5107V15.2708H13.2214V24H24V0.000107481H13.2214Z" fill="white"/>
+                    </mask>
+                    <g mask="url(#mask0)">
+                    </g>
+                </svg>                    
+                <h3>ΚΑΛΩΣ ΗΛΘΑΤΕ</h3>
+                <h2>Η αποστολή μας</h2>
+                <p id="text_full_res">Ο Παναρκαδικής Ομοσπονδίας Αμερικής είναι μια πανεθνική μη κερδοσκοπικού αδελφό <br>ελληνικό-αμερικανική
+                    οργάνωση τα μέλη της οποίας κατεβαίνουν από την περιοχή της Αρκαδίας στην Πελοπόννησο, στη νότια
+                    Ελλάδα …</p>
+                <span id="text_mobile_res"><p>Ο Παναρκαδικής Ομοσπονδίας Αμερικής είναι μια πανεθνική μη κερδοσκοπικού αδελφό<br> ελληνικό-αμερικανική οργάνωση …</p></span>    
+                <a href="#">ΠΕΡΙΣΣΟΤΕΡΑ</a>
+            </div>
+        </div>
+    </header>
+    <div id="Apografi">
+        <div id="container2">
+            <div id="logo-holder">
+                <img src="./images/smalltree.png" id="logotree">
+            </div>   
+            <div id="text">
+                <section id="parent">
+                    <h1 id="title"><span id="content1">Μετριόμαστε, </span><span id="content2">γιατί μετράμε!</span></h1>
+                    <section id="child_left">
+                        <h3>Γενική απογραφή &nbspτων αποδήμων Αρκάδων στις ΗΠΑ και επαναπατρισθέντων από τις ΗΠΑ</h3>
+                        <p id="pleft1">Η Παναρκαδική Ομοσπονδία Αμερικής πραγματοποιεί απογραφή των Αρκάδων που διαμένουν και εργάζονται στις ΗΠΑ, (ανεξαρτήτως υπηκότητας).</p>
+                        <h4 id="child_highlight"><b>Το αποτύπωμα της Αρκαδικής γης μας συνδέει!</b></h4>
+                        <p id="pleft2">Όση χιλιομετρική απόσταση και αν μας χωρίζει, όσες γενιές και να έχουμε...ψηλώσει πέρα απο τις ρίζες μας, η Αρκαδία, μας ενώνει!</p>
+                    </section>
+                    <section id="child_right">
+                        <h3>Απογραφόμαστε...</h3>
+                        <ul id="listright">
+                            <li id="bullet">Για να γνωρίσουμε ο ένας τον άλλο.</li>
+                            <li id="bullet2">Για να αντλήσουμε δύναμη απο &nbspτις ρίζες μας και την καταγωγή μας.</li>
+                            <li id="bullet3">Για να είμαστε χρήσιμοι και να &nbspπαρεμβαίνουμε δημιουργικά για τις ΗΠΑ την Ελλάδα και την Αρκαδία.</li>
+                            <li id="bullet">Για να υλοποιήσουμε τα σχέδια και τα οραματά μας.</li>
+                            <li>Για να είμαστε ισχυροί.</li>
+                            
+                        </ul>
+                    </section>
+                    <section id="ceremony">
+                        <h2>ΤΕΛΕΤΗ ΕΝΑΡΞΗΣ</h2>
+                        <h1><span id="content1">Παρασκευή </span><span id="content2">20 Απριλίου 2108</span></h1>
+                        <h3>ΝΕΑ ΥΟΡΚΗ</h3>
+                    </section>
+                </section>
+            </div>
+        </div> 
+    </div>
+    <div id="erga">
+        <div id="erga_title">
+            <img src="./images/ergatitle.png" >
+        </div>
+        <div id="wrapper">
+            <div id="grid1">
+                <img src="./images/grid1.jpg" class="gallery_image">
+                <h2>Γενικού Παναρκαδικό Νοσοκομείο Τρίπολης</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolor.</p>
+                <a href="#"><img src="./images/redline.png" id="redline_space">ΠΕΡΙΣΣΟΤΕΡΑ</a>
+            </div>
+            <div id="gridd2">
+                <img src="./images/grid2.jpg" class="gallery_image">
+                <h2 id="grid2_fix">Ο&nbsp παραδοσιακός οικισμός του Λεωνιδίου</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolor.</p>
+                <a href="#"><img src="./images/redline.png" id="redline_space">ΠΕΡΙΣΣΟΤΕΡΑ</a>
+            </div>
+            <div>
+                <img src="./images/grid3.jpg" class="gallery_image">
+                <h2>Κυνουρία, Εκεί που δεσπόζει ο Πάρνωνας</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolor.</p>
+                <a href="#"><img src="./images/redline.png" id="redline_space">ΠΕΡΙΣΣΟΤΕΡΑ</a>
+            </div>
+            <div>
+                <img src="./images/grid4.jpg" class="gallery_image">
+                <h2>Οι ελληνικές πόλεις με τα καλύτερα πάρκα!</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolor.</p>
+                <a href="#"><img src="./images/redline.png" id="redline_space">ΠΕΡΙΣΣΟΤΕΡΑ</a>
+            </div>
+        </div>
+        <div id="more_button_div">
+        <a href='#' id="more_button">ΠΕΡΙΣΣΟΤΕΡΑ</a>
+        </div>
+    </div>
+    <div id="contact_us_container">
+        <div id="contact_us">
+            <h3>ΕΠΙΚΟΙΝΩΝΙΑ</h3>
+            <hr id="divider1">
+            <form id="contact_us_form">
+                <label class="form_text">Ονοματεπώνυμο</label><br>
+                <input type="text" id="input_field"><br>
+                <label class="form_text">Τηλέφωνο</label><br>
+                <i><img src="./images/phone.png" id="image_phone"></i>
+                <input type="text" class="input_field_wlogo"><br>
+                <i><img src="./images/mailform.png" id="image_mail"></i>
+                <label  class="form_text">Εmail</label><br>
+                <input type="text" class="input_field_wlogo"><br>
+                <label class="form_text">Μήνυμα</label><br>   
+                <textarea type="text" text id="input_message"></textarea>
+                <hr id="divider2">
+                <button type="submit" form="contact_us_form" id="submit_button"><p>ΑΠΟΣΤΟΛΗ</p><img src="./images/submit_pointer.png" id="submit_pointer"></button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div id="footer_section">
+            <img src="./images/totop.png" id="to_top" onclick="window.scrollTo(0, 0)">
+            <div id="footer_logo_section">
+                <a href="#" id="footer_logo"><img src="logo.svg" alt="logo"></a>
+                <img src="PAFtext.svg" alt="PAF" id="footer_PAF">
+            </div>
+            <div id="social_div">
+                <ul id="social">
+                    <li><a href="#"><img src="./images/social_facebook.png"></a></li>
+                    <li><a href="#"><img src="./images/social_twitter.png"></a></li>
+                    <li><a href="#"><img src="./images/social_linkedin.png"></a></li>
+                    <li><a href="#"><img src="./images/social_instagram.png"></a></li>
+                    <li><a href="#"><img src="./images/social_youtube.png"></a></li>
+                    </ul>
+            </div>
+            <nav id="bottom">
+                <ul id="footer_menu">
+                    <li><a href="#">Η ΟΜΟΣΠΟΝΔΙΑ</a></li>
+                    <li><a href="#">ΑΡΚΑΔΩΝ ΕΡΓΑ</a></li>
+                    <li id="padfix"><a href="#">ΕΠΩΝΥΜΟΙ ΑΡΚΑΔΕΣ</a></li>
+                    <li ><a href="#">ΝΕΑ - ΕΝΗΜΕΡΩΣΗ</a></li>
+                    <li ><a href="#">ΕΠΙΣΚΕΨΗ ΣΤΗΝ ΑΡΚΑΔΙΑ</a></li>
+                    <li><a href="#">ΑΝΑΖΗΤΗΣΕΙΣ ΣΤΗΝ ΑΡΚΑΔΙΑ</a></li>
+                    <li id="padfix2"><a href="#">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
+                </ul>
+            </nav>
+            <img src="./images/totop.png" id="to_top_mobile" onclick="window.scrollTo(0, 0)">
+            <p>©2018 Pan Arcadian Federation of America</p>
+        </div>
+    </footer>
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "300px";
+          document.getElementById("menu-open").style.opacity = "0";
+        }
+        
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("menu-open").style.opacity = "100%";
+        }
+
+        function openNav2() {
+            document.getElementById("mySidenav2").style.width = "290px";
+        }
+        function closeNav2() {
+          document.getElementById("mySidenav2").style.width = "0";
+        }
+
+    </script>
+</body>
+</html>

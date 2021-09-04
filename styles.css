@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    /* Global Hover cursor */
+    :hover {
+        @apply cursor-Hover;
+    }
+    .sideNavA {
+        @apply font-black text-14 text-myBlue;
+    }
+    /* Header Menu & Dropdown Menu */
+    .MainMenu {
+        @apply hidden md:flex md:m-0 md:pr-17 md:pl-270 md:items-center md:justify-between xl:pr-40 xl:pl-283 xl:w-full;
+    }
+    .MainMenu > li {
+        @apply leading-tight m-10 xl:m-0;
+    }
+    .MainMenu > li > a {
+        @apply text-myBlue text-12 justify-between font-black hover:text-myRed xl:text-14;
+    }
+    .DropDownA {
+        @apply text-myBlue text-12 font-black ml-20 pb-10 block hover:text-myRed  xl:text-14;
+    }
+    #submenu:hover #dropdown-content {
+        @apply block;
+    } 
+}
+
+@font-face {
+    font-family: 'ProximaNova';
+    font-weight: normal;
+    src: url(./fonts/ProximaNovaRegular.otf) format("otf");
+}
+    
+@font-face {
+    font-family: 'ProximaNova';
+    font-weight: bold;
+    src: url(./fonts/ProximaNovaBold.otf) format("otf");
+}
+@font-face {
+    font-family: 'SourceSansPro';
+    font-weight: normal;
+    src: url(./fonts/SourceSansPro-Regular.ttf) format('truetype');
+}
+    
+@font-face {
+    font-family: 'SourceSansPro';
+    font-weight: bold;
+    src: url(./fonts/SourceSansPro-Bold.ttf) format('truetype');
+}
+
+
+/* npx tailwindcss-cli@latest build ./styles.css -o ./dist/styles.css */
